@@ -1,10 +1,9 @@
-package com.cheatpower.netherited.block;
+package com.cheatpower.metallic.block;
 
-import com.cheatpower.netherited.Netherited;
-import com.cheatpower.netherited.item.ModItems;
+import com.cheatpower.metallic.Metallic;
+import com.cheatpower.metallic.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -15,9 +14,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 
 public class ModBlocks {
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Netherited.MOD_ID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Metallic.MOD_ID);
 
-    public static final DeferredBlock<Block> PLACE_HOLDER = registerBlock("place-holder",
+    public static final DeferredBlock<Block> PLACE_HOLDER = registerBlock("place_holder",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
 
 
